@@ -1,0 +1,32 @@
+<div class="top">
+  <a href="#/dashboard">Back to Polls Dashboard</a>
+</div>
+<p>Question: {{poll.question}}</p>
+<p>Select an answer below by clicking VOTE</p>
+<table>
+    <tr>
+      <td>Option</td>
+      <td>Count of Votes</td>
+      <td>Action</td>
+    </tr>
+    <tr>
+      <td>{{poll.opt1}}</td>
+      <td>{{poll.opt1vote}}</td>
+      <td><button ng-click='vote1(poll._id)'>VOTE</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.opt2}}</td>
+      <td>{{poll.opt2vote}}</td>
+      <td><button ng-click='vote2(poll._id)'>VOTE</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.opt3}}</td>
+      <td>{{poll.opt3vote}}</td>
+      <td><button ng-click='vote3(poll._id)'>VOTE</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.opt4}}</td>
+      <td>{{poll.opt4vote}}</td>
+      <td><button ng-click='vote4(poll._id)'>VOTE</button></td>
+    </tr>
+</table>

@@ -1,0 +1,8 @@
+<div id="user">
+  <form ng-submit='createUser()'>
+    <label>Please enter your name: </label>
+    <input type="text" ng-model='newUser.name'>
+    <input type="submit" value="LOGIN">
+  <p style="color:red">{{errors.name.message}}</p>
+  </form>
+</div>
